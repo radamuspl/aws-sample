@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    active: development
+  application:
+    name: aws-sample
+server:
+  port: 8080
+  servlet:
+    context-path: /
+cloud:
+ aws:
+   credentials:
+     access-key: KEY
+     secret-key: SECRET
+     session-token: TOKEN
+   region:
+     static: us-east-1
+     auto: false
+   stack:
+     auto: false
